@@ -31,7 +31,7 @@ pip install fastapi uvicorn streamlit requests openai python-dotenv
 为了保护 API Key 安全，本项目未在代码中硬编码密钥。
 在项目根目录下新建一个名为 .env 的文件，并填入你的 DeepSeek API Key：
 
-\`\`\`text
+\`\`\`bash
 DEEPSEEK_API_KEY=sk-你的真实密钥填在这里
 \`\`\`
 
