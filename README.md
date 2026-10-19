@@ -23,30 +23,29 @@
 
 ### 2. 安装依赖
 确保已安装 Python 3.10+，在终端运行：
-\`\`\`bash
+```bash
 pip install fastapi uvicorn streamlit requests openai python-dotenv
-\`\`\`
-
+```
 ### 3. 配置环境变量 (Environment Variables)
 为了保护 API Key 安全，本项目未在代码中硬编码密钥。
 在项目根目录下新建一个名为 .env 的文件，并填入你的 DeepSeek API Key：
 
-\`\`\`bash
+```text
 DEEPSEEK_API_KEY=sk-你的真实密钥填在这里
-\`\`\`
+```
 
 ### 4. 启动后端服务 (FastAPI)
 打开一个终端，在项目目录下运行：
-\`\`\`bash
+```bash
 uvicorn main:app --reload
-\`\`\`
+```
 *后端默认运行在 http://127.0.0.1:8000*
 
 ### 5. 启动前端界面 (Streamlit)
 打开另一个终端（不要关掉后端），在项目目录下运行：
-\`\`\`bash
+```bash
 streamlit run app.py
-\`\`\`
+```
 *前端默认运行在 http://localhost:8501，浏览器将自动打开。*
 
 ## 👨‍💻 作者
